@@ -122,9 +122,9 @@ const addPlaylist = function(name) {
               'tracks': []
        }
 }
-console.log(library)
-addPlaylist('Workout')
-console.log(library)
+// console.log(library)
+// addPlaylist('Workout')
+// console.log(library)
 
 // STRETCH:
 // given a query string string, prints a list of tracks
