@@ -99,7 +99,9 @@ const generateUid = function() {
 
 // adds a track to the library
 const addTrack = function(name, artist, album) {
-       library.tracks[generateUid()] = {
+       const trackID = generateUid()
+       library.tracks[trackID] = {
+              'id': trackID,
               'name': name,
               'artist': artist,
               'albume': album
