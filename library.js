@@ -20,9 +20,21 @@ const library = {
                       name: "Other Playlist",
                       tracks: ["t03"]
                     }
-             }
+             },
+  printPlaylists: function() {
+                     for (const playlist in this.playlists) {
+                            console.log(`${playlist}: ${this.playlists[playlist].name} - ${this.playlists[playlist].tracks.length} tracks`)
+                     }
+              },
+  printTracks: function() {
+                     for (const track in this.tracks) {
+                            console.log(`${track}: ${this.tracks[track].name} by ${this.tracks[track].artist} (${this.tracks[track].album})`)
+                     }
+              }
 };
 
+// library.printPlaylists()
+library.printTracks()
 /////////////////////////////
 // FUNCTIONS TO IMPLEMENT:
 /////////////////////////////
